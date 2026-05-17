@@ -2,6 +2,8 @@
 
 ![Interface](./interface.png)
 
+![MiniO](./minio.png)
+
 Project ini adalah implementasi object storage on-premise architecture menggunakan:
 
 * Kubernetes
@@ -20,10 +22,10 @@ Flow app:
 * Data persistent menggunakan PVC Kubernetes
 
 Project structure berdasarkan implementation : 
+# Project Structure
 
 ```text
-/home/labibaadinda/
-│
+.
 ├── minio-kubeapps/
 │   ├── minio-deployments.yml
 │   ├── minio-pvc.yaml
@@ -31,13 +33,18 @@ Project structure berdasarkan implementation :
 │   ├── minio-api-svc.yaml
 │   └── .env
 │
-├── project-storage-apps/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── uploader-deployment.yml
-│   ├── app-svc.yaml
-│   ├── .env
-│   └── src/
+└── project-storage-apps/
+    ├── Dockerfile
+    ├── uploader-deployment.yml
+    ├── app-svc.yaml
+    ├── nginx.conf
+    ├── package.json
+    ├── package-lock.json
+    ├── .env
+    ├── .env.example
+    ├── public/
+    │   └── index.html
+    └── src/
 ```
 
 ---
