@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uploader-deployment
+  labels:
+    app: uploader
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uploader
+  template:
+    metadata:
+      labels:
+        app: uploader
+    spec:
+      containers:
+      - name: uploader-dinda
+        image: labibaadinda/uploader-storage:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+          name: uploader-port
+          protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: app-storage
+
