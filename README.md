@@ -4,6 +4,20 @@
 
 ![MiniO](./minio.png)
 
+## Live Deployment Access
+
+* Uploader Application:
+  <http://103.52.115.52:30000/>
+
+* MinIO Dashboard:
+  <http://103.52.115.52:30002/>
+
+  for minio dashboard :
+  username : dinda
+  password : dinda123
+
+---
+
 Project ini adalah implementasi object storage on-premise architecture menggunakan:
 
 * Kubernetes
@@ -256,17 +270,6 @@ Function:
 ---
 
 # 8. Application Environment
-
-`.env`
-
-```env
-PORT=3001
-
-MINIO_ENDPOINT=http://103.52.115.52:30000/
-MINIO_ACCESS_KEY=dinda
-MINIO_SECRET_KEY=dinda123
-MINIO_BUCKET=bucket-file
-```
 
 App connect ke:
 
