@@ -12,9 +12,9 @@
 * MinIO Dashboard:
   <http://103.52.115.52:30002/>
 
-  for minio dashboard :
-  username : dinda
-  password : dinda123
+for minio dashboard :
+- username : dinda
+-  password : dinda123
 
 ---
 
