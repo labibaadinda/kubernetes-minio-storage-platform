@@ -7,10 +7,10 @@
 ## Live Deployment Access
 
 * Uploader Application:
-  <http://103.52.115.52:30000/>
+  <http://103.52.115.52:30002/>
 
 * MinIO Dashboard:
-  <http://103.52.115.52:30002/>
+  <http://103.52.115.52:30000/>
 
 for minio dashboard :
 - username : dinda
